@@ -52,7 +52,7 @@ func packedFileName(path string) string {
 	fileName := filepath.Base(path)
 	fileExt := filepath.Ext(fileName)
 
-	return strings.TrimSuffix(fileName, fileExt) + "." + packedExtension + "." + fileExt
+	return strings.TrimSuffix(fileName, fileExt) + "." + packedExtension + fileExt
 }
 
 func init() {
